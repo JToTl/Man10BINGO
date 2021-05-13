@@ -126,10 +126,10 @@ public class BINGO {
         @Override
         public void run(){
             canRoll=false;
-            List<UUID> newLinePlList=new ArrayList<>();
+            List<UUID> newLinePlList=new ArrayList<>(),newLi_zhiList=new ArrayList<>();
             int num=deck.draw(),count=0;
 
-            broadcastMessage("§a§l抽選機を回しています・・・");
+            broadcastMessage("§7§kaiueoaiueo§a§l抽選機を回しています・・・§7§lapfghjwqm");
             threadSleep(2000);
 
             broadcastMessage("§e"+num+"§a§l番、「§c"+GlobalClass.config.getString("items."+num+".name")+"§a§l」が出ました！");
@@ -141,7 +141,9 @@ public class BINGO {
             for(BINGOData bingoData:playerList.values()){
                 if(bingoData.bingoCard.openPanel(num)){
                     count+=1;
-                    if(bingoData.bingoCard.getNewLine())newLinePlList.add(bingoData.uuid);
+                    boolean[] bo=bingoData.bingoCard.getNewLine();
+                    if(bo[0])newLi_zhiList.add(bingoData.uuid);
+                    if(bo[1])newLinePlList.add(bingoData.uuid);
                     playSoundPl(Bukkit.getPlayer(bingoData.uuid),Sound.BLOCK_BEACON_ACTIVATE,1);
                 }
                 else playSoundPl(Bukkit.getPlayer(bingoData.uuid),Sound.BLOCK_BEACON_DEACTIVATE,0);
@@ -154,6 +156,11 @@ public class BINGO {
                 }
             }
             threadSleep(700);
+            for(UUID uuid:newLi_zhiList){
+                if(exceptList.contains(uuid))continue;
+                BINGOData bingoData=playerList.get(uuid);
+                broadcastMessage("§6"+bingoData.name+"§a§lが新たに§d"+bingoData.bingoCard.li_zhi+"ライン§a§lでリーチ！");
+            }
             for(UUID uuid:newLinePlList){
                 if(exceptList.contains(uuid))continue;
                 BINGOData bingoData=playerList.get(uuid);

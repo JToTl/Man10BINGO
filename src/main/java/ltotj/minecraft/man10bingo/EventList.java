@@ -60,7 +60,7 @@ public class EventList implements Listener {
             e.setCancelled(true);
             if(slot<45){
                 if(GlobalClass.bingo.canEdit){
-                    if(item.getType().equals(Material.BARRIER)) {
+                    if(!item.getType().equals(Material.BARRIER)) {
                         bingoData.setNumber(slot + 1);
                         playSoundPl(player, Sound.BLOCK_CHAIN_STEP, 0);
                     }
@@ -77,7 +77,7 @@ public class EventList implements Listener {
             e.setCancelled(true);
             if (slot < 30){
                 if(GlobalClass.bingo.canEdit) {
-                    if(item.getType().equals(Material.BARRIER)) {
+                    if(!item.getType().equals(Material.BARRIER)) {
                         bingoData.setNumber(slot + 46);
                         playSoundPl(player, Sound.BLOCK_CHAIN_STEP, 0);
                     }
