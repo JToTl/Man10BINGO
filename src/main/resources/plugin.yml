@@ -1,0 +1,15 @@
+name: Man10BINGO
+version: ${project.version}
+main: ltotj.minecraft.man10bingo.Main
+api-version: 1.16
+authors: [JToTl]
+commands:
+  bingo:
+    description:
+    usage:
+
+permissions:
+  bingo.op:
+    default: op
+  bingo.player:
+    default: true
