@@ -164,8 +164,11 @@ public class BINGO {
             for(UUID uuid:newLinePlList){
                 if(exceptList.contains(uuid))continue;
                 BINGOData bingoData=playerList.get(uuid);
-                broadcastMessage("§6"+bingoData.name+"§a§lが§c"+bingoData.bingoCard.lines+"ライン§a§lを達成しました！");
-                if(bingoData.bingoCard.lines==maxLine)exceptList.add(uuid);
+                if(bingoData.bingoCard.lines<maxLine)broadcastMessage("§6"+bingoData.name+"§a§lが§c"+bingoData.bingoCard.lines+"ライン§a§lを達成しました！");
+                else{
+                    broadcastMessage("§cB §dI §9N §eG §cO §a§l！§6"+bingoData.name+"§a§lが§g"+maxLine+"ライン§a§lを達成しました！");
+                    exceptList.add(uuid);
+                }
             }
             canRoll=true;
         }

@@ -1,6 +1,5 @@
 package ltotj.minecraft.man10bingo;
 
-import com.google.gson.internal.$Gson$Preconditions;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.command.Command;
@@ -21,7 +20,10 @@ public class Commands implements CommandExecutor {
         if(args.length!=0&&player.hasPermission("bingo.op")){
             switch (args[0]) {
                 case "set":
-                    if(args.length>1&&args[1].matches("[+-]?\\d*(\\.\\d+)?")&&Integer.parseInt(args[1])>0) {
+                    if(GlobalClass.bingo!=null){
+                        player.sendMessage("既にビンゴが設置されています  /bingo end  で消去可能です");
+                    }
+                    else if(args.length>1&&args[1].matches("[+-]?\\d*(\\.\\d+)?")&&Integer.parseInt(args[1])>0) {
                         GlobalClass.bingo = new BINGO(Integer.parseInt(args[1]));
                         for(Player p:Bukkit.getServer().getOnlinePlayers()){
                             if(p.hasPermission("bingo.op")){
@@ -75,11 +77,17 @@ public class Commands implements CommandExecutor {
                     ItemStack item = player.getInventory().getItemInMainHand();
                     if (item.getType().equals(Material.AIR)) {
                         player.sendMessage("アイテム持ってください");
-                    } else {
+                    } else if(args.length<3){
                         GlobalClass.config.getConfig().set("items." + args[1] + ".material", String.valueOf(item.getType()));
                         GlobalClass.config.getConfig().set("items." + args[1] + ".name", item.getType().name());
                         GlobalClass.config.saveConfig();
                         player.sendMessage(args[1] + "に" + item.getType().name() + "を設定しました");
+                    }
+                    else{
+                        GlobalClass.config.getConfig().set("items." + args[1] + ".material", String.valueOf(item.getType()));
+                        GlobalClass.config.getConfig().set("items." + args[1] + ".name", args[2]);
+                        GlobalClass.config.saveConfig();
+                        player.sendMessage(args[1] + "に" + item.getType().name() + "、" + args[2] + "を設定しました");
                     }
                     break;
             }

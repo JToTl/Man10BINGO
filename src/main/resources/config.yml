@@ -1,226 +1,226 @@
 items:
   '1':
     material: WOODEN_SWORD
-    name: WOODEN_SWORD
+    name: 木の剣
   '2':
     material: STONE_SWORD
-    name: STONE_SWORD
+    name: 石の剣
   '3':
     material: GOLDEN_SWORD
-    name: GOLDEN_SWORD
+    name: 金の剣
   '4':
     material: IRON_SWORD
-    name: IRON_SWORD
+    name: 鉄の剣
   '5':
     material: DIAMOND_SWORD
-    name: DIAMOND_SWORD
+    name: ダイヤモンドの剣
   '6':
     material: WOODEN_SHOVEL
-    name: WOODEN_SHOVEL
+    name: 木のシャベル
   '7':
     material: STONE_SHOVEL
-    name: STONE_SHOVEL
+    name: 石のシャベル
   '8':
     material: GOLDEN_SHOVEL
-    name: GOLDEN_SHOVEL
+    name: 金のシャベル
   '9':
     material: IRON_SHOVEL
-    name: IRON_SHOVEL
+    name: 鉄のシャベル
   '10':
     material: DIAMOND_SHOVEL
-    name: DIAMOND_SHOVEL
+    name: ダイヤモンドのシャベル
   '11':
     material: WOODEN_PICKAXE
-    name: WOODEN_PICKAXE
+    name: 木のピッケル
   '12':
     material: STONE_PICKAXE
-    name: STONE_PICKAXE
+    name: 石のピッケル
   '13':
     material: GOLDEN_PICKAXE
-    name: GOLDEN_PICKAXE
+    name: 金のピッケル
   '14':
     material: IRON_PICKAXE
-    name: IRON_PICKAXE
+    name: 鉄のピッケル
   '15':
     material: DIAMOND_PICKAXE
-    name: DIAMOND_PICKAXE
+    name: ダイヤモンドのピッケル
   '16':
     material: WOODEN_AXE
-    name: WOODEN_AXE
+    name: 木のオノ
   '17':
     material: STONE_AXE
-    name: STONE_AXE
+    name: 石のオノ
   '18':
     material: GOLDEN_AXE
-    name: GOLDEN_AXE
+    name: 金のオノ
   '19':
     material: DIAMOND_AXE
-    name: DIAMOND_AXE
+    name: ダイヤモンドのオノ
   '20':
     material: WOODEN_HOE
-    name: WOODEN_HOE
+    name: 木のクワ
   '21':
     material: STONE_HOE
-    name: STONE_HOE
+    name: 石のクワ
   '22':
     material: GOLDEN_HOE
-    name: GOLDEN_HOE
+    name: 金のクワ
   '23':
     material: IRON_HOE
-    name: IRON_HOE
+    name: 鉄のクワ
   '24':
     material: DIAMOND_HOE
-    name: DIAMOND_HOE
+    name: ダイヤモンドのクワ
   '25':
     material: APPLE
-    name: APPLE
+    name: リンゴ
   '26':
     material: BREAD
-    name: BREAD
+    name: パン
   '27':
     material: COOKED_PORKCHOP
-    name: COOKED_PORKCHOP
+    name: 焼いた豚肉
   '28':
     material: DISPENSER
-    name: DISPENSER
+    name: ディスペンサー
   '29':
     material: NOTE_BLOCK
-    name: NOTE_BLOCK
+    name: ノートブロック
   '30':
     material: REDSTONE_BLOCK
-    name: REDSTONE_BLOCK
+    name: レッドストーンブロック
   '31':
     material: TARGET
-    name: TARGET
+    name: ターゲットブロック
   '32':
     material: TRIPWIRE_HOOK
-    name: TRIPWIRE_HOOK
+    name: トリップワイヤーフック
   '33':
     material: OBSERVER
-    name: OBSERVER
+    name: オブサーバー
   '34':
     material: LIGHT_WEIGHTED_PRESSURE_PLATE
-    name: LIGHT_WEIGHTED_PRESSURE_PLATE
+    name: 金の感圧番
   '35':
     material: TRAPPED_CHEST
-    name: TRAPPED_CHEST
+    name: トラップチェスト
   '36':
     material: REDSTONE_LAMP
-    name: REDSTONE_LAMP
+    name: レッドストーンランプ
   '37':
     material: BEACON
-    name: BEACON
+    name: ビーコン
   '38':
     material: SCUTE
-    name: SCUTE
+    name: カメの甲羅
   '39':
     material: LAPIS_LAZULI
-    name: LAPIS_LAZULI
+    name: ラピスラズリ
   '40':
     material: SLIME_BALL
-    name: SLIME_BALL
+    name: スライムボール
   '41':
     material: LEATHER
-    name: LEATHER
+    name: 皮
   '42':
     material: WHEAT
-    name: WHEAT
+    name: 小麦
   '43':
     material: BONE
-    name: BONE
+    name: 骨
   '44':
     material: EMERALD_BLOCK
-    name: EMERALD_BLOCK
+    name: エメラルドブロック
   '45':
     material: NETHER_QUARTZ_ORE
-    name: NETHER_QUARTZ_ORE
+    name: クォーツ鉱石
   '46':
     material: MINECART
-    name: MINECART
+    name: トロッコ
   '47':
     material: ELYTRA
-    name: ELYTRA
+    name: エリトラ
   '48':
     material: TNT_MINECART
-    name: TNT_MINECART
+    name: TNTつきトロッコ
   '49':
     material: RAIL
-    name: RAIL
+    name: レール
   '50':
     material: OAK_BOAT
-    name: OAK_BOAT
+    name: オークのボート
   '51':
     material: GOLDEN_HELMET
-    name: GOLDEN_HELMET
+    name: 金のヘルメット
   '52':
     material: CHAINMAIL_CHESTPLATE
-    name: CHAINMAIL_CHESTPLATE
+    name: チェーンのチェストプレート
   '53':
     material: LEATHER_LEGGINGS
-    name: LEATHER_LEGGINGS
+    name: 皮のレギンス
   '54':
     material: DIAMOND_BOOTS
-    name: DIAMOND_BOOTS
+    name: ダイヤモンドのブーツ
   '55':
     material: CRAFTING_TABLE
-    name: CRAFTING_TABLE
+    name: 作業台
   '56':
     material: FURNACE
-    name: FURNACE
+    name: かまど
   '57':
     material: ENCHANTING_TABLE
-    name: ENCHANTING_TABLE
+    name: エンチャントテーブル
   '58':
     material: END_PORTAL_FRAME
-    name: END_PORTAL_FRAME
+    name: エンドポータルフレーム
   '59':
     material: WITHER_ROSE
-    name: WITHER_ROSE
+    name: ウィザーローズ
   '60':
     material: JUNGLE_LEAVES
-    name: JUNGLE_LEAVES
+    name: ジャングルの葉
   '61':
     material: CACTUS
-    name: CACTUS
+    name: サボテン
   '62':
     material: BIRCH_LOG
-    name: BIRCH_LOG
+    name: 白樺の原木
   '63':
     material: WET_SPONGE
-    name: WET_SPONGE
+    name: 濡れたスポンジ
   '64':
     material: BOOKSHELF
-    name: BOOKSHELF
+    name: 本棚
   '65':
     material: REDSTONE_ORE
-    name: REDSTONE_ORE
+    name: レッドストーン鉱石
   '66':
     material: CARVED_PUMPKIN
-    name: CARVED_PUMPKIN
+    name: くり抜かれたカボチャ
   '67':
     material: NETHERRACK
-    name: NETHERRACK
+    name: ネザーラック
   '68':
     material: SOUL_SAND
-    name: SOUL_SAND
+    name: ソウルサンド
   '69':
     material: DIAMOND_BLOCK
-    name: DIAMOND_BLOCK
+    name: ダイヤモンドブロック
   '70':
     material: MYCELIUM
-    name: MYCELIUM
+    name: 菌糸ブロック
   '71':
     material: MELON
-    name: MELON
+    name: スイカブロック
   '72':
     material: OAK_SAPLING
-    name: OAK_SAPLING
+    name: オークの苗木
   '73':
     material: CARROT
-    name: CARROT
+    name: ニンジン
   '74':
     material: HONEY_BOTTLE
-    name: HONEY_BOTTLE
+    name: 蜂蜜入りのビン
   '75':
     material: HEART_OF_THE_SEA
-    name: HEART_OF_THE_SEA
+    name: 海洋の心
