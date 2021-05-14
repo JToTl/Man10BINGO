@@ -13,7 +13,7 @@ import java.util.List;
 
 public class InventoryGUI {
 
-    Inventory inv;
+    public Inventory inv;
 
     public InventoryGUI(int i, String name){
         inv= Bukkit.createInventory(null, i, Component.text(name));

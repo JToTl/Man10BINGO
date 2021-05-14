@@ -70,8 +70,8 @@ public class BINGOCard {
     public boolean openPanel(int num){
         if(panelPositions.containsKey(num)){
             int pos=9*(panelPositions.get(num)/10)+(panelPositions.get(num)-10*(panelPositions.get(num)/10))+2;
+            inv.setItem(pos,Material.END_CRYSTAL,inv.inv.getItem(pos).getI18NDisplayName(),"§c§l解放済み");//構造上nullはない
             inv.enchantItem(pos);
-            inv.addLore(pos,"§c§l解放済み");
             preNum=panelPositions.get(num);
             return true;
         }
@@ -94,7 +94,7 @@ public class BINGOCard {
             else if(diagonalUP==4)li_count+=1;
         }
         if(row[preNum/10]==5)count+=1;
-        else if(row[preNum/10]==-4)li_count+=1;
+        else if(row[preNum/10]==4)li_count+=1;
         if(column[preNum-10*(preNum/10)]==5)count+=1;
         else if(column[preNum-10*(preNum/10)]==4)li_count+=1;
         li_zhi=li_count;

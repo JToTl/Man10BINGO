@@ -129,7 +129,7 @@ public class BINGO {
             List<UUID> newLinePlList=new ArrayList<>(),newLi_zhiList=new ArrayList<>();
             int num=deck.draw(),count=0;
 
-            broadcastMessage("§7§kaiueoaiueo§a§l抽選機を回しています・・・§7§lapfghjwqm");
+            broadcastMessage("§a§l抽選機を回しています・・・§c§k");
             threadSleep(2000);
 
             broadcastMessage("§e"+num+"§a§l番、「§c"+GlobalClass.config.getString("items."+num+".name")+"§a§l」が出ました！");
